@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <section id="principal">
+        <div id="formulario">
+
+            <form action="../controllers/envio.php" method="POST">
+
+                <label for="nome">Nome:</label>
+                <input type="text" name="txtNome" placeholder="Digite seu nome" />
+                <br>
+
+                <label for="nasc">Data de Nascimento:</label>
+                <input type="date" name="nasc" />
+                <br>
+
+                <label for="cpf">CPF:</label>
+                <input type="text" name="cpf" placeholder="XXX.XXX.XXX-XX" maxlength="11" />
+                <br>
+
+                <label for="cep">Cep:</label>
+                <input type="text" name="txtCep" placeholder="informe o Cep" maxlength="8" size="8" />
+                <br>
+
+                <label for="endereco">Endereço:</label>
+                <input type="text" name="txtEndereco" placeholder="informe seu endereço" />
+                <br>
+
+                <label for="bairro">Bairro:</label>
+                <input type="text" name="txtBairro" placeholder="informe o bairro" />
+                <br>
+
+                <label for="cidade">Cidade:</label>
+                <input type="text" name="txtCidade" placeholder="informe a cidade" />
+                <br>
+
+                <label for="uf">UF:</label>
+                <input type="text" name="txtUF" placeholder="UF" maxlength="2" size="2" />
+                <br>
+
+                <label for="email">E-mail:</label>
+                <input type="email" name="txtEmail" placeholder="Email" />
+                <br>
+
+                <label for="fone">Telefone:</label>
+                <input type="tel" name="txtFone" />
+                <br>
+
+                <div class="btnDiv"></div>
+                <input type="submit" name="btnEnviar" value="Enviar" onclick="msg()">/>
+                <input type="button" name="btnListar" value="Listar" />
+                <input type="reset" name="btnLimpar" value="limpar" />
+        </div>
+        </form>
+
+        </div>
+    </section>
+</body>
+
+</html>

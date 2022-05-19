@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>SandersInfo - Contato</title>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <div id="container">
+
+            <header>
+                <hgroup>
+                    <!-- titulo -->
+                    <div id="futureweb">
+                        <h1>SandersInfo</h1>
+                    </div>
+                    <div id="desenvolvimento">
+                        <h2>Desenvolvimento web - novas tecnologias</h2>
+                    </div>
+                </hgroup>
+            </header>
+
+            <nav>
+                <!-- area de navegação-->
+                <ul>
+                    <!-- define uma lista-->
+                    <li><a href="index.html">Home page</a></li>
+                    <li><a href="sobre.html">Sobre nós</a></li>
+                    <li><a href="servicos.html">serviços</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+
+            <figure id="imagens_principais">
+                <!-- define uma caixa com imagens-->
+                <img src="imagens\gerenciamento.jpg" alt="" Title="gerenciamento" width="320" height="290" />
+                <img src="imagens\projetos.jpg" alt="" Title="projetos" width="320" height="290" />
+                <img src="imagens\designer-grafico.jpg" alt="" Title="designer" width="320" height="290" />
+            </figure>
+
+            <section id="principal">
+                <div id="formulario">
+                    <h2>Fale Conosco</h2>
+                    <form action="arquivo.php" method="post" name="contato"
+                        oninput="out_investimento.value=parseInt(rng_investimento.value)">
+
+                        <br />
+                        <!-- campo nome -->
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="txtnome" tabindex="2">
+
+                        <br />
+
+                        <!-- Sexo -->
+                        <input type="radio" id="sexoM" name="txtSexo" value="M">
+                        <label for="sexoM">Masculino</label>
+
+                        <input type="radio" id="sexoF" name="txtSexo" value="F">
+                        <label for="sexoF">Feminino</label>
+
+                        <br />
+                        <!-- categorias -->
+                        <input type="checkbox" id="arqui" name="txtCat" value="Arquitetura">
+                        <label for="arqui">Arquitetura</label>
+
+                        <input type="checkbox" id="eng" name="txtCat" value="Engenharia">
+                        <label for="eng">Engenharia</label>
+
+                        <input type="checkbox" id="odonto" name="txtCat" value="Odontologia">
+                        <label for="odonto">Odontologia</label>
+
+                        <input type="checkbox" id="uro" name="txtCat" value="Urologia">
+                        <label for="uro">Urologia</label>
+
+                        <br />
+
+                        <!-- nascimento -->
+                        <label for="mes">Mês do nascimento</label>
+                        <input type="month" id="mes" name="txtMes" tabindex="3">
+
+                        <br />
+                        <!-- E-Mail -->
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="txtEmail" maxlength="30" required="required"
+                            placeholder="Exemplo.: meuemail@provedor.br" tabindex="1" autofocus="autofocus">
+
+                        <br />
+                        <!-- Site -->
+                        <label for="site">Site</label>
+                        <input type="url" id="site" name="txtSite" placeholder="Ex.: http://www.seusite.com"
+                            tabindex="4">
+
+                        <br />
+                        <!-- quantidade de paginas -->
+                        <label for="paginas">Quantidade de Paginas</label>
+                        <input type="number" id="paginas" name="intPaginas" maxlength="3" tabindex="5">
+
+                        <br />
+                        <!-- Prazo de Entrega -->
+                        <label for="prazo">Prazo de entrega em meses</label>
+                        <input type="number" id="prazo" name="intPrazo" maxlength="2" max="24" min="2" step="2"
+                            tabindex="6">
+
+                        <br />
+                        <!-- prazo de entrega -->
+                        <label for="investimento">Prazo de entrega em dias</label>
+                        <input type="range" name="rng_investimento" id="investimento" step="5" value="0" max="60">
+                        <output name="out_investimento" onforminput=" value=rng_investimento.valueAsNumber"
+                            style="float: right;"></output>
+
+                        <br />
+                        <!-- data do pedido -->
+                        <label for="data">Data do Pedido</label>
+                        <input type="date" id="data" name="dtdData">
+
+                        <br />
+                        <!-- hora do pedido -->
+                        <label for="hora">Hora do Pedido</label>
+                        <input type="time" id="hora" name="txtHora">
+
+                        <br />
+                        <!-- cor do site -->
+                        <label for="corSite">Cor do Site</label>
+                        <input type="color" id="corSite" name="txtColor">
+
+                        <br />
+
+                        <!-- serviços -->
+                        <label for="servicos">serviços solicitados</label>
+                        <select name="txtServicos" id="servicos">
+                            <option value="Website">web</option>
+                            <option value="Hospedagem de site">Hospedagem</option>
+                            <option value="Serviço de E-mail">E-Mail</option>
+                            <option value="SEO">SEO</option>
+
+
+                        </select>
+
+                        <br />
+                        <!-- Area de Observações -->
+
+                        <label for="obs">Observações</label>
+                        <textarea name="txtobs" id="obs" cols="30" rows="10"></textarea>
+
+                        <br />
+
+                        <!-- Botões -->
+                        <input type="submit" id="enviar" name="btnEnviar" value="Enviar Formulário" tabindex="7">
+                        <input type="reset" id="limpar" name="btnLimpar" value="limpar Formulário" tabindex="8">
+                    </form>
+                </div>
+            </section>
+
+            <nav>
+                <ul>
+                    <!-- define uma lista-->
+                    <li><a href="index.html">Home page</a></li>
+                    <li><a href="sobre.html">Sobre nós</a></li>
+                    <li><a href="servicos.html">serviços</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+
+
+            <footer>
+
+
+                <!-- link das redes sociais-->
+                <div>
+                    <figure>
+                        <a href="https://www.blogger.com" target="_blank"><img src="imagens\blogger.png"></a>
+                        <figcaption>Blogger</figcaption>
+                    </figure>
+
+                    <figure>
+                        <a href="https://www.facebook.com" target="_blank"><img src="imagens\facebook.png"></a>
+                        <figcaption>Facebook</figcaption>
+                    </figure>
+
+                    <figure>
+                        <a href="https://www.twitter.com" target="_blank"><img src="imagens\twitter.png"></a>
+                        <figcaption>Twitter</figcaption>
+                    </figure>
+                </div>
+
+
+                <p id="politica_privacidade">
+                    <a href="index.html"> Política de Privacidade</a>
+                </p>
+            </footer>
+        </div>
+
+
+
+
+
+
+
+    </main>
+</body>
+
+</html>
